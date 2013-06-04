@@ -1,0 +1,22 @@
+<header class="bar-title"><a class="button-prev" href="#">Back</a><h1 class="title">Details</h1></header>
+<div class='content'>
+    <div class="details">
+        <img src='pics/<%= firstName %>_<%= lastName %>.jpg'/>
+        <h1><%= firstName %> <%= lastName %></h1>
+        <h2><%= title %></h2>
+        <h2><%= city %></h2>
+    </div>
+    <ul class="list inset" style="clear:both;">
+        <% if (managerId) { %>
+        <li><a href="#employees/<%= managerId %>"><p>View Manager</p><p><%= managerName %></p><div class="action-icon icon-manager"/></a></li>
+        <% } %>
+        <% if (reports > 0) { %>
+        <li><a href="#employees/<%= id %>/reports"><p>View Direct Reports</p><p><%= reports %></p><div class="action-icon icon-reports"/></a></li>
+        <% } %>
+        <li><a href="tel:<%= officePhone %>"><p>Call Office</p><p><%= officePhone %></p><div class="action-icon icon-call"/></a></li>
+        <li><a href="tel:<%= cellPhone %>"><p>Call Cell</p><p><%= cellPhone %></p><div class="action-icon icon-call"/></a></li>
+        <li><a href="#employees/<%= id %>/map"><p>Location</p><p><%= city %></p><div class="action-icon icon-location"/></a></li>
+        <li><a href="sms:<%= cellPhone %>"><p>SMS</p><p><%= cellPhone %></p><div class="action-icon icon-sms"/></a></li>
+        <li><a href="mailto:<%= email %>"><p>Email</p><p><%= email %></p><div class="action-icon icon-mail"/></a></li>
+    </ul>
+</div>
