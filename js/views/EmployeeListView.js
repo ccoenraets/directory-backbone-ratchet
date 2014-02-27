@@ -2,7 +2,7 @@ app.views.EmployeeListView = Backbone.View.extend({
 
     tagName:'ul',
 
-    className:'list',
+    className:'table-view',
 
     initialize:function () {
         var self = this;
@@ -24,6 +24,8 @@ app.views.EmployeeListView = Backbone.View.extend({
 app.views.EmployeeListItemView = Backbone.View.extend({
 
     tagName:"li",
+
+    className: "table-view-cell",
 
     initialize:function () {
         this.model.on("change", this.render, this);

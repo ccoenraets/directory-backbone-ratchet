@@ -1,9 +1,5 @@
 app.views.ReportsView = Backbone.View.extend({
 
-    initialize:function () {
-        this.store = this.options.store;
-    },
-
     render: function () {
         this.$el.html(this.template(this.model.attributes));
         this.model.reports.fetch();
@@ -12,7 +8,7 @@ app.views.ReportsView = Backbone.View.extend({
     },
 
     events: {
-        "click .button-prev": "back"
+        "click .btn-back": "back"
     },
 
     back: function() {

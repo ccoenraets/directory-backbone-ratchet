@@ -6,7 +6,7 @@ app.views.EmployeeView = Backbone.View.extend({
     },
 
     events: {
-        "click .button-prev": "back"
+        "click .btn-back": "back"
     },
 
     back: function(event) {

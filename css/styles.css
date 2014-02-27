@@ -1,5 +1,14 @@
+ul {
+    clear: both;
+}
+
 .content {
-    background: #f2f2f2;
+    position: absolute;
+}
+
+.bar-header-secondary>input {
+    margin-top: 6px;
+    height: 31px;
 }
 
 .details {
@@ -13,57 +22,19 @@
     height: 80px;
 }
 
+.home .table-view {
+    margin: 0 !important;
+    border: none;
+}
+
 .details h1 {
-    padding-top: 20px;
+    padding-top: 16px;
     font-size: 18px;
 }
 
-.details h2 {
-    font-size: 14px;
-    font-weight: normal;
-    color: #888;
-}
-
-ul {
-    clear:both;
-}
-
-.list li {
-    clear: both;
-    padding: 12px 60px 16px 8px !important;
-}
-
-.list > li p:nth-of-type(1) {
-    padding-top: 6px;
-    font-weight: bold;
-}
-
-.list > li p:nth-of-type(2) {
-    color: #888;
-}
-
-.list > li img {
-    width: 48px;
-    height: 48px;
-    float: left;
-    margin-top: 0px;
-    margin-right: 8px;
-}
-
-.list li:active {
-    background-color: #eee;
-}
-
-.action-list > li {
-    position: relative;
-}
-
-.action-icon {
-    position: absolute !important;
-    top: 12px;
-    right: 8px !important;
-    width: 32px !important;
-    height: 32px;
+.media-object {
+    width: 42px;
+    height: 42px;
 }
 
 .icon-call {
@@ -99,13 +70,4 @@ ul {
 .icon-location {
     background: transparent url(images/ic_action_location.png);
     background-repeat: no-repeat;
-}
-
-#map {
-    position: absolute;
-    top: 44px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
 }
